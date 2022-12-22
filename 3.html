@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>列表</title>
+    <title>列表|表单</title>
 </head>
 <body>
     <h1>无序列表</h1>
@@ -28,5 +28,145 @@
         <dd>地址</dd>
         <dd>电话</dd>
     </dl>
+
+    <h1>表单标签</h1>
+    <form action="">
+        用户名：<input type="text" value="admin" name="" id=""/>
+        <br/>
+        密码：<input type="password" maxlength="16"/>
+        <br/>
+        性别：<input type="radio" name="sex" value="男" checked="checked" id="male"/><label for="male">男</label>
+        <input type="radio" name="sex" value="女" id="female"/><label for="female">女</label>
+        <br/>
+        籍贯：
+        <select name="" id="">
+            <option value="">浙江</option>
+            <option value="" selected="selected">上海</option>
+            <option value="">深圳</option>
+        </select>
+        <br/>
+        备注：
+        <textarea name="" id="" cols="30" rows="3">
+        </textarea>
+        <br/>
+        <input type="button" value="获取验证码"/>
+        <br/>
+        <input type="file" value="上传文件"/>
+        <br/>
+        <input type="checkbox" checked="checked" name="" id=""/>同意条款
+        <br/>
+        <input type="reset"/> <input type="submit" value="立即注册">
+    </form>
+
+    <h1>注册页面</h1>
+    <table width="500">
+        <tr>
+            <td>性别：</td>
+            <td>
+                <input type="radio" name="sex" id="male1"/>
+                <label for="male1"><img width="15" src="./3/male.png"/>男</label>
+                <input type="radio" name="sex" id="female1"/>
+                <label for="female1"><img width="15" src="./3/female.png"/>女</label>
+            </td>
+        </tr>
+        <tr>
+            <td>生日：</td>
+            <td>
+                <select name="" id="">
+                    <option value="">--请选择年份</option>
+                    <option value="">2022年</option>
+                    <option value="">2021年</option>
+                    <option value="">2020年</option>
+                    <option value="">2019年</option>
+                    <option value="">2018年</option>
+                    <option value="">2017年</option>
+                    <option value="">2016年</option>
+                    <option value="">2015年</option>
+                    <option value="">2014年</option>
+                    <option value="">2013年</option>
+                    <option value="">2012年</option>
+                    <option value="">2011年</option>
+                    <option value="">2010年</option>
+                    <option value="">2009年</option>
+                    <option value="">2008年</option>
+                    <option value="">2006年</option>
+                    <option value="">2005年</option>
+                    <option value="">2004年</option>
+                    <option value="">2003年</option>
+                    <option value="">2002年</option>
+                    <option value="">2001年</option>
+                    <option value="">2000年</option>
+                    <option value="">1999年</option>
+                </select>
+                <select name="" id="">
+                    <option value="">--请选择月份--</option>
+                    <option value="">1月</option>
+                    <option value="">2月</option>
+                    <option value="">3月</option>
+                    <option value="">4月</option>
+                </select>
+                <select name="" id="">
+                    <option value="">--请选择日--</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>所在地区</td>
+            <td><input type="text" value="北京"></td>
+        </tr>
+        <tr>
+            <td>婚姻状态：</td>
+            <td>
+                <input type="radio" id="wh" name="marry" checked="checked">
+                    <label for="wh">未婚</label>
+                <input type="radio" id="yh" name="marry">
+                    <label for="yh">已婚</label>
+                <input type="radio" id="lh" name="marry">
+                    <label for="lh">离婚</label>
+            </td>
+        </tr>
+        <tr>
+            <td>学历：</td>
+            <td>
+                <input type="text" value="小学">
+            </td>
+        </tr>
+        <tr>
+            <td>爱好：</td>
+            <td>
+                <input type="checkbox" name="hobby">看书
+                <input type="checkbox" name="hobby">听歌
+                <input type="checkbox" name="hobby">其他
+            </td>
+        </tr>
+        <tr>
+            <td>个人介绍</td>
+            <td>
+                <textarea name="" id="" cols="30" rows="3"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="免费注册">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" checked="checked">我同意注册条款和注册标准
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <a href="#">我已注册，立即登录</a>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
